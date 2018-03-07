@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+
+
+    <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.css'>
+    <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css'>
+
+    <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+
+<body>
+    <div class="signupSection">
+        <form class="signupForm thanks_form" name="signupform" action="save.php" method="post">
+            <button type="button" id="btn" class="btn btn-sm replace ">Switch rtl/ltr</button>
+            <h2>Form registration</h2>
+            <ul class="noBullet">
+                <li>
+                    <label for="firstname"></label>
+                    <input type="text" class="inputFields" id="firstname" name="firstname" placeholder="First name" value="" oninput="return firstNameValidation(this.value)" required/>
+                </li>
+                <li>
+                    <label for="lastname"></label>
+                    <input type="text" class="inputFields" id="lastname" name="lastname" placeholder="Last name" value="" oninput="return lastNameValidation(this.value)" required/>
+                </li>
+                <li>
+                    <label for="phone"></label>
+                    <input type="tel" class="inputFields" id="phone" name="phone" placeholder="Phone" value="" oninput="return phoneValidation(this.value)" required/>
+                </li>
+                <li>
+                    <label for="email"></label>
+                    <input type="email" class="inputFields" id="email" name="email" placeholder="Email" value="" required/>
+                </li>
+                <li>
+                    <label for="password"></label>
+                    <input type="password" class="inputFields" id="password" name="password" placeholder="Password" value="" oninput="return passwordValidation(this.value)" required/>
+                </li>
+                <li id="center-btn">
+                    <input type="submit" id="join-btn" name="join" alt="Join" value="Send">
+                </li>
+            </ul>
+        </form>
+    </div>
+    <div class="success-wrapper">
+        <div class="success-content">
+            <h2>Thanks you</h2>
+        </div>
+    </div>
+    <script src="js/index.js"></script>
+
+</body>
+
+</html>
